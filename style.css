@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(assets/Norse-Bold.woff2) format('woff2');
+  }
+  
+
+
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: #f9fafb;
+}
+
+main {
+    display: flex;
+}
+
+.container {
+    position: relative;
+}
+
+aside .container > img {
+    height: 100vh;
+    width: auto;
+    display: block;
+}
+
+
+
+aside .container .logo {
+    position: absolute;
+    top: 12rem;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.logo img {
+    width: 6rem;
+}
+
+aside .container .logo span {
+    font-family: Norse-Bold;
+    font-size: 5rem;
+    color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.info-container {
+    margin-bottom: 2rem;
+}
+
+
+.whole-form-container > .form-container {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0 2rem 0;
+    box-shadow: 0 8px 9px -3px rgba(0, 0, 0, 0.1);
+}
+
+.whole-form-container .form-container p {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.whole-form-container .form-container form {
+    display: flex;
+    gap: 5rem;
+}
+
+.whole-form-container .form-container form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.whole-form-container .form-container form div div {
+    margin-bottom: 1rem;
+}
+
+.whole-form-container .form-container form div div label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3px;
+}
+
+.whole-form-container .form-container form div div input {
+    border-radius: 5px;
+    border: #E5E7EB solid 1px;
+    background: #fffefe;
+}
+
+.whole-form-container .form-container form div div input:focus {
+    border-color: blue;
+    box-shadow: 0 8px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.whole-form-container .form-container form div div input[type="password"]:invalid, 
+.whole-form-container .form-container form div div input[type="password"]:user-invalid {
+    border-color: red;
+}
+
+.whole-form-container .form-container form div .password::after, 
+.whole-form-container .form-container form div .confirm_password::after{
+    content: "* Passwords do not match";
+    color: red;
+    font-size: .8rem;
+    display: none;
+}
+
+.whole-form-container button {
+    background: #596D48;
+    border-radius: 10px;
+    padding: .7rem;
+    color: #ffffff;
+    width: 13rem;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.whole-form-container h4 {
+    font-weight: normal;
+}
+
+.whole-form-container h4 a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}

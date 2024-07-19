@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./modern-normalize.css">
+    <script src="./script.js" defer></script>
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <main>     
+        <aside>
+            <div class="container">
+                <img src="https://picsum.photos/500/800" alt="random image">
+                <div class="logo">
+                    <img src="./odin-lined.png" alt="The Odin Logo">
+                    <span>ODIN</span>
+                </div>
+            </div>
+
+        </aside>
+
+        <section>
+            <div class="info-container">
+                <h2>Drop us a line, 
+                    and we’ll get in touch with you. 
+                    We’ll see if we’re a match and 
+                    how we can help each other. </h2>
+                <h2>Have a world-changing <em>idea?</em> Say it outloud!!</h2>
+            </div>
+            <div class="whole-form-container">
+                <div class="form-container">
+                    <p>Let's get started!!</p>
+                    <form action="#" method="get">
+                        <div class="first_block">
+                            <div class="name">
+                                <label for="name">First Name</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+
+                            <div class="email">
+                                <label for="mail">Email</label>
+                                <input type="email" name="mail" id="mail">
+                            </div>
+
+                            <div class="password">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" minlength="4">
+                            </div>
+                        </div>
+
+                        <div class="second_block">
+                            <div class="surname">
+                                <label for="surname">Last Name</label>
+                                <input type="text" name="surname" id="surname">
+                            </div>
+    
+                            <div class="phone">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone" id="phone">
+                            </div>
+    
+                            <div class="confirm_password">
+                                <label for="confirm">Confirm Password</label>
+                                <input type="password" name="confirm" id="confirm" minlength="4">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <button>Create Account</button>
+
+                <h4>Already have an account? <a href="#">Log in</a></h4>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
